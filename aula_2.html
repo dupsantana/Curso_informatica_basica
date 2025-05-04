@@ -6,13 +6,51 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <style>
+        main {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        main.h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        
+        .destaque {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        
+        .topico {
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+            margin: 15px 0;
+        }
+    </style>
 </head>
 
-
-
 <body>
-
 
     <header class="header">
         <div class="container-fluid bg-primary">
@@ -22,32 +60,81 @@
                 </div>
                 <div class="col-6 text-center">
                     <div class="title text-light mb-4 mt-3">
-                        
                         <h1>Curso de informática básica</h1>
-
                     </div>
                 </div>
-
             </div>
             <div class="row mb-0 text-center">
                 <div class="col-6">
                     <a href="aulas.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><h4>Aulas</h4></a>
                 </div>
-
                 <div class="col-6">
-                    <a href="calendar.html"class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><h4>Calendário</h4></a>    </a>
+                    <a href="calendar.html"class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><h4>Calendário</h4></a>
                 </div>
-
             </div>
-        </div>
-
         </div>
     </header>
 
     <main>
+        <h1>Aula 2 – Especificações do Computador</h1>
 
+        <div class="destaque">
+            <h2>Acessando as Configurações</h2>
+            <ol>
+                <li>Clique com o botão direito no ícone "Meu Computador"</li>
+                <li>Selecione "Propriedades"</li>
+                <li>Visualize as informações do sistema</li>
+            </ol>
+        </div>
+
+        <h2>Componentes Básicos:</h2>
         
+        <div class="topico">
+            <h3>Processador (CPU)</h3>
+            <p>▶ Cérebro do computador - Executa todas as operações e comandos do sistema<br>
+            ▶ Responsável pelos cálculos e processamento de dados - Medido em GHz (velocidade)</p>
+        </div>
 
+        <div class="topico">
+            <h3>Memória RAM</h3>
+            <p>▶ Memória de curto prazo - É apagada quando o computador desliga<br>
+            ▶ Armazena dados temporários para acesso rápido - Permite multitarefa eficiente</p>
+        </div>
+
+        <div class="topico">
+            <h3>HD/SSD</h3>
+            <p>▶ Armazenamento permanente - Guarda arquivos mesmo quando desligado<br>
+            ▶ HD: Discos magnéticos - Mais lento porém mais barato<br>
+            ▶ SSD: Chips de memória (mais rápido) - Não tem partes móveis, mais durável</p>
+        </div>
+
+        <div class="topico">
+            <h3>Placa-mãe</h3>
+            <p>▶ Conecta todos os componentes - Principal circuito do computador<br>
+            ▶ Base para instalação de peças - Possui slots e conectores para expansão</p>
+        </div>
+
+        <div class="topico">
+            <h3>Drive de CD/DVD</h3>
+            <p>▶ Para leitura de mídias físicas - CDs, DVDs e Blu-rays<br>
+            ▶ Não é mais comum em computadores novos - Substituído por pendrives e downloads</p>
+        </div>
+
+        <div class="topico">
+            <h3>Fonte de alimentação</h3>
+            <p>▶ Converte energia elétrica - Transforma 110V/220V para voltagens menores<br>
+            ▶ Distribui energia para todos os componentes - Protege contra picos de energia</p>
+        </div>
+
+        <div class="destaque">
+            <h2>Diferenças Chave</h2>
+            <p>⚡ <strong>Desempenho:</strong> Relacionado a CPU e RAM (velocidade) - Define a rapidez nas tarefas<br>
+            💾 <strong>Armazenamento:</strong> Relacionado a HD/SSD (capacidade) - Define quanto cabe no computador</p>
+        </div>
+
+        <h2>Atividade Prática</h2>
+        <p>Baixe o PDF com exercícios para praticar:</p>
+        <a href="atv/Atividade_2.pdf" download="Material_Aula_2" class="download-btn">Baixar Atividade (PDF)</a>
 
     </main>
     
