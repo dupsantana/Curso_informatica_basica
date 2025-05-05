@@ -1,19 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aula 03</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <style>
+        main {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .centralizado {
+          display: flex;
+          justify-content: center;
+        }
+        .lista-centralizada {
+          text-align: left;
+        }
+        .sem-ponto {
+          list-style: none;
+        }
+        .texto-central {
+          text-align: center;
+        }
+        .container-texto {
+          width: 100%;
+          max-width: 700px;
+          margin: 0 auto;
+        }
+        .titulo-secao {
+          color: cornflowerblue;
+          margin-top: 2rem;
+        }
+        .subtitulo {
+          color: rgb(121, 145, 190);
+          margin-top: 1.5rem;
+        }
+        .fonte-pequena {
+          font-size: small;
+          color: darkgrey;
+        }
+        .lista-conteudo {
+          text-align: left;
+          display: inline-block;
+        }
+      </style>
 </head>
-
-
-
 <body>
-
-
     <header class="header">
         <div class="container-fluid bg-primary">
             <div class="row">
@@ -22,33 +59,109 @@
                 </div>
                 <div class="col-6 text-center">
                     <div class="title text-light mb-4 mt-3">
-                        
                         <h1>Curso de informática básica</h1>
-
                     </div>
                 </div>
-
             </div>
             <div class="row mb-0 text-center">
                 <div class="col-6">
                     <a href="aulas.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><h4>Aulas</h4></a>
                 </div>
-
                 <div class="col-6">
                     <a href="calendar.html"class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><h4>Calendário</h4></a>    </a>
                 </div>
-
             </div>
         </div>
-
         </div>
     </header>
-
     <main>
-
-        
-
+      <div class="centralizado mt-4">
+        <nav>
+          <ol class="lista-centralizada sem-ponto">
+            <a href="#tag1"><li>1.1 Conhecendo o Explorador de Arquivos</li></a>
+            <a href="#tag2"><li>1.2 Criando pastas e subpastas</li></a>
+            <a href="#tag3"><li>1.3 Nomeação e organização lógica de arquivos</li></a>
+            <a href="#tag4"><li>1.4 Exibição: detalhes, ícones, listas</li></a>
+            <a href="#tag5"><li>1.5 Criar e excluir atalhos</li></a>
+            <a href="#tag6"><li>1.6 Atalhos do teclado mais usados (Ctrl+C, Ctrl+V etc.)</li></a>
+          </ol>
+        </nav>
+      </div>
+      <div class="container texto-central">
+        <div>
+          <h2 id="tag1" class="titulo-secao">Conhecendo o Explorador de Arquivos</h2>
+          <p class="container-texto">
+            <img src="img/Explorador de arquivos.PNG" alt="Captura de tela do Explorador de Arquivos" width="500px">
+            <p class="fonte-pequena">Fonte: Apostila "Informática Básica para Estudo Online" - Instituto Federal de Goiás</p>
+            <ol class="lista-centralizada">
+              <li><strong>Área de Trabalho</strong>: pasta que contém os arquivos e atalhos da área detrabalho.</li>
+              <li><strong>Downloads</strong>: pasta em que são salvos os arquivos e programas baixadosda internet. Por padrão, os navegadores salvam os downloads nessa pasta!</li>
+              <li><strong>Documentos</strong>: é comum salvar arquivos pessoais na pasta Documentos. Você pode criar subpastas para dividir melhor seus arquivos.</li>
+              <li><strong>Este computador</strong>: neste espaço você terá acesso aos discos rígidos (unidades), partições, disco removível (CD/DVD), pendrives e outros.</li>
+              <li><strong>Pastas frequentes</strong>: espaço onde são mostradas as principais pastas e as mais acessadas.</li>
+              <li><strong>Arquivos recentes</strong>: apresenta os atalhos dos últimos arquivos criados, editados ou baixados pelo usuário</li>
+            </ol>
+          </p>
+        </div>
+        <div>
+          <h2 id="tag2" class="titulo-secao">Criando pastas e subpastas</h2>
+          <p><!--Imagem Explorador de arquivos-->
+            <h4 class="subtitulo">Criando uma pasta</h4>
+            <ol class="lista-centralizada">
+              <li>Acesse a página documentos</li>
+              <li>Clique em um local vazio com o botão direito do mouse > Novo > Nova pasta</li>
+              <li>Digite o nome da nova pasta e pressione a tecla "Enter"</li>
+            </ol>
+            <h4 class="subtitulo">Criando uma subpasta</h4>
+            <ol class="lista-centralizada">
+              <li>Dê dois cliques sob a pasta recém-criada para abri-la</li>
+              <li>Dentro da pasta, repita o mesmo processo (Botão direito > Novo > Nova pasta)</li>
+              <li>Dê um nome a subpasta e pressione a tecla "Enter"</li>
+            </ol>
+          </p>
+        </div>
+        <div>
+          <h2 id="tag3" class="titulo-secao">Nomeação e organização lógica de arquivos</h2>
+          <p><strong>Por que isso é importante?</strong> Organizar arquivos corretamente economiza tempo e evita confusão. Com nomes claros e pastas bem definidas, você sabe onde está cada documento, foto ou projeto.</p>
+          <p><strong>📌 Boas Práticas: </strong></p>
+          <p>
+            <ul class="lista-centralizada lista-conteudo sem-ponto container-texto">
+              <li>▶ Evite nomes genéricos como "arquivo1" ou "documento2"</li>
+              <li>▶ Utilize nomes curtos, descritivos e com datas, se necessário.</li>
+              <br>
+              <li>✅<strong> Use padrões consistentes, como:</strong></li>
+              <li>▶ Separadores: Use underline (_) ou hífen (-) em vez de espaços.</li>
+              <li>▶ Datas: Use o formato AAAA-MM-DD</li>
+              <li>▶ Evite acentos e caracteres especiais (ç, ã, é, !, ?, etc.)</li>
+              <br>
+              <li>📁<strong> Crie uma hierarquia simples e lógica, por exemplo: </strong></li>
+              <li>▶ Curso de Informática / Aulas / Aula_01_Introducao.pdf</li>
+              <li>▶ Curso de informática / Exercicios / Exercicio_Aula_01.pdf</li>
+            </ul>
+          </p>
+        </div>
+        <div>
+          <h2 id="tag4" class="titulo-secao">Exibição: detalhes, ícones, listas</h2>
+          <p>Modos de Exibição são formas de ver os arquivos e pastas no computador. Você pode escolher o que for mais prático para você, dependendo da tarefa.</p>
+          <!--Imagem da parte de Exibição do explorador de arquivos-->
+          <p class="subtitulo"><strong>Principais Modos de Exibição: </strong></p>
+          <ul class="lista-centralizada lista-conteudo sem-ponto container-texto">
+            <li>▶ <strong>Ícones grandes</strong>: Mostra as miniaturas do arquivo (indicado para fotos e vídeos)</li>
+            <li>▶ <strong>Lista</strong>: Mostra nomes em uma lista simples (indicado para pastas com muitos arquivos)</li>
+            <li>▶ <strong>Detalhes</strong>: Mostra nome, tipo, tamanho, data de modificação (melhor para organizar e encontrar arquivos)</li>
+          </ul>
+          <p class="subtitulo"><strong>Como alterar o modo de exibição?</strong></p>
+          <ul class="lista-centralizada lista-conteudo sem-ponto container-texto">
+            <li>▶ Abrar uma pasta qualquer</li>
+            <li>▶ No menu superior (Windows 10 e 11), clique em "Exibir"</li>
+            <li>▶ Escolha o modo de exibição</li>
+          </ul>
+        </div> 
+        <div>
+          <h2 id="tag5" class="titulo-secao">Criar e excluir atalhos</h2>
+          
+        </div> 
+      </div>
     </main>
-    
 </body>
 </html>
