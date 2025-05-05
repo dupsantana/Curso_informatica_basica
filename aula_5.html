@@ -1,19 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aula 05</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <style>
+        main {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .centralizado {
+          display: flex;
+          justify-content: center;
+        }
+        .lista-centralizada {
+          text-align: left;
+        }
+        .sem-ponto {
+          list-style: none;
+        }
+        .texto-central {
+          text-align: center;
+        }
+        .container-texto {
+          width: 100%;
+          max-width: 700px;
+          margin: 0 auto;
+        }
+        .titulo-secao {
+          color: cornflowerblue;
+          margin-top: 2rem;
+        }
+        .subtitulo {
+          color: rgb(121, 145, 190);
+          margin-top: 1.5rem;
+        }
+        .fonte-pequena {
+          font-size: small;
+          color: darkgrey;
+        }
+        .lista-conteudo {
+          text-align: left;
+          display: inline-block;
+        }
+        img {
+          width: 100%;
+        }
+      </style>
 </head>
-
-
-
 <body>
-
-
     <header class="header">
         <div class="container-fluid bg-primary">
             <div class="row">
@@ -21,13 +61,10 @@
                     <a href="index.html"><i class="fa-solid fa-house fa-2xl mt-5 ms-5" style="color: #ffffff;"></i></a>
                 </div>
                 <div class="col-6 text-center">
-                    <div class="title text-light mb-4 mt-3">
-                        
+                    <div class="title text-light mb-4 mt-3"> 
                         <h1>Curso de informática básica</h1>
-
                     </div>
                 </div>
-
             </div>
             <div class="row mb-0 text-center">
                 <div class="col-6">
@@ -36,19 +73,88 @@
                 <div class="col-6">
                     <a href="calendar.html"class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><h4>Calendário</h4></a>    </a>
                 </div>
-
             </div>
         </div>
-
         </div>
     </header>
-
     <main>
-
-     
-
-
+        <div class="centralizado mt-4">
+            <nav>
+                <ol class="lista-centralizada sem-ponto">
+                  <a href="#tag1"><li>5.1 Criando e formatando documentos no Word (ou similar)</li></a>
+                  <a href="#tag2"><li>5.2 Salvando e organizando arquivos em pastas</li></a>
+                  <a href="#tag3"><li>5.3 Impressão (visualizar, configurar e imprimir)</li></a>
+                </ol>
+              </nav>
+        </div>
+        <div class="container texto-central">
+            <div>
+                <h2 id="tag1" class="titulo-secao">Criando e formatando documentos no Word</h2>
+                <p class="subtitulo"><strong>📝 O que é um editor de texto?</strong></p>
+                <p>Um editor de texto é um software que permite criar, editar e formatar documentos com texto. O Microsoft Word é um dos editores de texto mais utilizados, mas existem alternativas como o Google Docs, LibreOffice Writer, entre outros.</p>
+                <p class="subtitulo"><strong>📃 Como criar um novo arquivo no Word?</strong></p>
+                <ul class="lista-centralizada lista-conteudo sem-ponto container-texto">
+                    <li>▶ Abra o Programa "Microsoft Word"</li>
+                    <li>▶ Selecione novo documento ou documento em branco</li>
+                </ul>
+                <p></p>
+                <img src="img/Novo-documento-Word.png" alt="Imagem inicial do Microsoft Word">
+                <p class="subtitulo"><strong>✏️ Como formatar um texto?</strong></p>
+                <ul class="lista-centralizada lista-conteudo sem-ponto container-texto">
+                    <p><strong>Alterar Fonte</strong></p>
+                    <li>▶ Para alterar o tipo de fonte (como Arial, Times New Roman, etc.), clique na caixa de Fonte na barra de ferramentas e selecione a fonte desejada.</li>
+                    <br>
+                    <p><strong>Alterar Tamanho da Fonte</strong></p>
+                    <li>▶ Selecione o texto e, em seguida, escolha o tamanho da fonte na caixa de Tamanho da Fonte.</li>
+                    <br>
+                    <p><strong>Negrito, Itálico e Sublinhado</strong></p>
+                    <li>▶ Selecione o texto que deseja formatar e use os botões de Negrito (B), Itálico (I) ou Sublinhado (S) para dar destaque ao texto.</li>
+                    <br>
+                    <p><strong>Cor do Texto</strong></p>
+                    <li>▶ Para mudar a cor do texto, clique no ícone de cor de fonte e escolha a cor desejada.</li>
+                    <br>
+                    <p><strong>Alinhamento do Texto</strong></p>
+                    <li>▶ <strong>Esquerda: </strong>Alinha o texto à margem esquerda.</li>
+                    <li>▶ <strong>Centro: </strong>Centraliza o texto.</li>
+                    <li>▶ <strong>Direita: </strong>Alinha o texto à margem direita.</li>
+                    <li>▶ <strong>Justificado: </strong>Ajusta o texto para que ele fique alinhado tanto à esquerda quanto à direita.</li>
+                </ul>
+            </div>
+            <div>
+                <h2 id="tag2" class="titulo-secao">Salvando e organizando arquivos em pastas</h2>
+                <p class="subtitulo"><strong>⬇️ Como salvar um arquivo?</strong></p>
+                <ul class="lista-centralizada lista-conteudo sem-ponto container-texto">
+                    <li>▶ Clique na guia "Arquivo" (no canto superior direito)</li>
+                    <li>▶ Clique em "Salvar como"</li>
+                    <li>▶ Vá até o local que deseja salvar o arquivo</li>
+                    <li>▶ Dê nome ao arquivo e escolha o tipo de formato (como .docx, .pdf, .txt, etc)</li>
+                    <li>▶ Clique em "Salvar"</li>
+                </ul>
+            </div>
+            <div>
+                <h2 id="tag3" class="titulo-secao">Impressão (visualizar, configurar e imprimir)</h2>
+                <p>Impressão é o processo de transferir um documento digital para o papel usando uma impressora. Isso pode ser feito a partir de diversos programas, como editores de texto, navegadores, planilhas, entre outros.</p>
+                <p class="subtitulo"><strong>📄 Como visualizar o documento a ser impresso?</strong></p>
+                <ul class="lista-centralizada lista-conteudo sem-ponto container-texto">
+                    <li>▶ Clique na guia "Arquivo" (no canto superior direito)</li>
+                    <li>▶ Clique na opção "Imprimir". Uma tela de visualização será aberta mostrando como o documento ficará impresso</li>
+                </ul>
+                <p class="subtitulo"><strong>⚙️ Como configurar corretamente a impressão?</strong></p>
+                <ul class="lista-centralizada lista-conteudo sem-ponto container-texto">
+                    <p><strong>Selecionando a impressora</strong></p>
+                    <li>▶ Na tela de "Imprimir", clique sobre a opção "Impressora"</li>
+                    <li>▶ Caso não encontre a impressora que deseja conectar, verifique se ela está conectada ao computador e se está ligada</li>
+                    <p><strong>Selecionando páginas a serem impressas</strong></p>
+                    <p>Caso você não queira imprimir todo o documento, você pode personalizar a impressão da seguinte forma: </p>
+                    <li>▶ Ainda na tela "Imprimir, na parte de "Configurações", informe as páginas que deseja imprimir</li>
+                    <p>Se, por exemplo, o arquivo tiver 10 páginas e você quer imprimir apenas entre a 2 e 5, digite "2-5"</p>
+                </ul>
+                <p class="subtitulo"><strong>🖨️ Imprimindo o documento</strong></p>
+                <ul class="lista-centralizada lista-conteudo sem-ponto container-texto">
+                    <li>▶ Novamente, na tela "Imprimir", clique sobre a opção "Imprimir"</li>
+                </ul>
+            </div>
+        </div>
     </main>
-    
 </body>
 </html>
