@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,9 @@
     }
     .lista-centralizada {
       text-align: left;
+    }
+    .sem-ponto{
+        list-style: none;
     }
     </style>
 </head>
@@ -46,66 +49,102 @@
     <main>
         <div class="centralizado">
             <nav>
-                <ul class="lista-centralizada mt-4">
-                    <a href="#tag1"><li >Finalidade e vantagens de um computador</li></a>
-                    <a href="#tag2"><li>Tipos de computadores</li></a>
-                    <a href="#tag3"><li>Conceitos básicos de hardware e software</li></a>
-                    <a href="#tag4"><li>Conhecendo as partes físicas (monitor, CPU, teclado, mouse)</li></a>
-                    <a href="#tag5"><li>Introdução ao sistema operacional</li></a>
-                </ul>
+                <ol class="lista-centralizada sem-ponto mt-4">
+                    <a href="#tag1"><li>1.1 Finalidade e vantagens de um computador</li></a>
+                    <a href="#tag2"><li>1.2 Tipos de computadores</li></a>
+                    <a href="#tag3"><li>1.3 Conceitos básicos de hardware e software</li></a>
+                    <a href="#tag4"><li>1.4 Conhecendo as partes físicas (monitor, CPU, teclado, mouse)</li></a>
+                    <a href="#tag5"><li>1.5 Introdução ao sistema operacional</li></a>
+                </ol>
             </nav>
+                </div>
+                <div class="container mt-4 text-center">
+                    <h2 id="tag1" style="color: cornflowerblue;">Finalidade e vantagens de um computador</h2>
+                    <p class="col-md-6 offset-md-3">O computador foi inventado para oferecer conforto e praticidade, como
+                        todo instrumento inventado pela humanidade. Ele é um equipamento com
+                        capacidade para receber, processar, produzir e armazenar grandes volumes de
+                        informações. As grandes vantagens que obtemos utilizando um computador
+                        são as seguintes:</p>
+                    <ul class="lista-centralizada mt-4 d-inline-block text-start sem-ponto col-md-6">
+                        <li>▶ Rapidez na execução de tarefas, em função de sua grande capacidade de processamento de informações.</li>
+                        <li>▶ Precisão na produção de informações (exatidão).</li>
+                        <li>▶ Manipulação de grande volume de informações, principalmente quando do controle de tarefas repetitivas.</li>
+                        <li>▶ Organização ou mesmo racionalidade, que é uma consequência de todas as vantagens citadas anteriormente.</li>
+                    </ul>
+                    <div>
+                        <h2 id="tag2" class="mt-4" style="color: cornflowerblue;">Tipos de computadores</h2>
+                        <div>
+                            <h4 class="mt-3" style="color: rgb(121, 145, 190);">Servidor Corporativo</h4>
+                            <p class="col-md-6 offset-md-3"><strong>Servidor corporativo</strong> – é um computador que possui gigantesca capacidade
+                                de processamento e substituiu o antigo mainframe (este ocupava muito
+                                espaço). É adotado por grandes corporações que precisam controlar milhões
+                                de transações por dia (bancos e administradoras de cartões de crédito, por
+                                exemplo). Pode ser chamado também de super-servidor.</p>
+                                <img src="img/servidorCorporativo.png" alt="Imagem de servidor corporativo" width="500px">
+                                <p style="font-size: small; color: darkgrey;" class="col-md-6 offset-md-3">Fonte: https://br.freepik.com/vetores-gratis/dois-servidores-pretos-racks-ilustracao-realista_3907757.htm#from_element=detail_alsolike</p>
+                        </div>
+                        <div>
+                            <h4 class="mt-3" style="color:rgb(121, 145, 190);">Desktop</h4>
+                            <p class="col-md-6 offset-md-3"><strong>Desktop</strong> – computador de mesa, não portátil, com monitor, mouse, teclado,
+                                caixas de som, e a caixa onde fica a CPU, placa-mãe, processador, entre
+                                outras peças. Uma versão de desktop conhecido como “all in one” (tudo
+                                em um) reúne basicamente o gabinete (CPU) e o monitor numa só estrutura,
+                                economizando espaço.</p>
+                            <img src="img/desktop-curso.jpg" alt="Imagem de um desktop" width="400px">
+                            <p style="font-size: small; color: darkgrey;" class="mt-2 col-md-6 offset-md-3">Fonte: https://br.freepik.com/fotos-gratis/espaco-de-trabalho-com-tela-e-teclado-do-computador_12079253.htm#fromView=search&page=1&position=48&uuid=400e8952-0a04-4b6c-9919-f5a479938ba3&query=pc</p>
+                        </div>
+                        <div>
+                            <h4 class="mt-3" style="color: rgb(121, 145, 190);">Notebooks ou laptops</h4>
+                            <p class="col-md-6 offset-md-3"><strong>Notebook ou laptop</strong> – é um microcomputador portátil. Antes, laptop e
+                                notebook tinham características diferentes, porém os conceitos se perderam
+                                com o passar do tempo. Monitor, teclado e CPU estão integrados em um só
+                                gabinete, com monitor retrátil para guarda e transporte.</p>
+                                <img src="img/notebook.jpg" alt="Imagem notebook apple" width="400px">
+                                <p style="font-size: small; color: darkgrey;" class="mt-2 col-md-6 offset-md-3">Fonte: https://www.pexels.com/pt-br/foto/motor-de-pesquisa-google-no-macbook-pro-40185/</p>
+                        </div>
+                        <div>
+                            <h4 class="mt-3 col-md-6 offset-md-3" style="color: rgb(121, 145, 190);">Tablets e Smartphones</h4>
+                            <p class="col-md-6 offset-md-3"><strong>Tablet</strong> – computador em franco estágio de popularização. Sua característica
+                                principal é não possuir teclado. Praticamente todas as funções são efetuadas
+                                através da tela de toque (touchscreen). São menores do que um netbook
+                                e são mais voltados para leitura de publicações eletrônicas (jornais, livros),
+                                acesso à internet e entretenimento.</p>
+                                <img src="img/tablet.jpg" alt="Imagem de um tablet" width="400px">
+                                <p style="font-size: small; color: darkgrey;" class="mt-2 col-md-6 offset-md-3">Fonte: https://br.freepik.com/fotos-gratis/tablet-com-vista-superior-com-tela-minima_31501246.htm#fromView=search&page=2&position=37&uuid=cbe350be-4922-49b9-8e06-8b597047cab0&query=tablet</p>
+                            <p class="col-md-6 offset-md-3"><strong>Smartphone</strong> – embora seja um telefone celular, possui funções encontradas
+                                em computadores, como acesso à internet e execução de programas aplicativos.</p>
+                                <img src="img/smartphone.jpg" alt="Imagem de um smartphone" width="300px">
+                                <p style="font-size: small; color: darkgrey;" class="mt-2 col-md-6 offset-md-3">Fonte: https://br.freepik.com/fotos-gratis/vista-frontal-da-mao-segurando-o-smartphone_11372498.htm#fromView=search&page=1&position=2&uuid=cbe350be-4922-49b9-8e06-8b597047cab0&query=smartphone</p>
+                        </div>
+                        <div>
+                            <h2 id="tag3" class="mt-4" style="color: cornflowerblue;">Conceitos básicos de Hardware e Software</h2>
+                            <p class="mt-3 col-md-6 offset-md-3">O <strong>hardware</strong> é a parte física do computador, ou seja, todos os componentes que podem ser tocados, como monitor, teclado, mouse, placa-mãe, HD, entre outros.</p>
+                            <p class="col-md-6 offset-md-3">Já o <strong>software</strong> é a parte lógica do computador, ou seja, os programas e sistemas que fazem o hardware funcionar. Exemplos de software incluem o sistema operacional (como o Windows ou Linux), navegadores de internet, editores de texto e jogos.</p>
+                            <p class="col-md-6 offset-md-3">Em resumo, o hardware precisa do software para funcionar, e o software depende do hardware para ser executado.</p>
+                        </div>
+                        <div>
+                            <h2 id="tag4" class="mt-4" style="color: cornflowerblue;">Conhecendo as partes físicas (monitor, CPU, teclado, mouse)</h2>
+                            <p class="mt-3">O computador é composto por diversas partes físicas(hardware). A seguir, destacamos os principais componentes externos:</p>
+                            <ul class="lista-centralizada d-inline-block text-start sem-ponto col-md-6">
+                                <li><strong>▶ Monitor:</strong> é a “tela” do computador, usada para exibir as informações visuais.</li>
+                                <li><strong>▶ CPU (Unidade Central de Processamento):</strong> também chamada de “gabinete”, é onde estão os principais componentes internos, como o processador e a memória.</li>
+                                <li><strong>▶ Teclado:</strong> periférico usado para digitar textos e comandos.</li>
+                                <li><strong>▶ Mouse:</strong> dispositivo apontador que permite movimentar o cursor na tela e interagir com os elementos gráficos.</li>
+                              </ul>
+                        </div>
+                        <div>
+                            <h2 id="tag5" class="mt-4" style="color: cornflowerblue;">Introdução ao sistema operacional</h2>
+                            <p class="col-md-6 offset-md-3">O <strong>sistema operacional</strong> é o software principal de um computador. Ele atua como intermediário entre o usuário e o hardware, permitindo que programas e dispositivos funcionem de forma integrada.
+                            Exemplos de sistemas operacionais incluem o <strong>Windows</strong>, <strong>Linux</strong>, <strong>macOS</strong> (em computadores), e <strong>Android</strong> e <strong>iOS</strong> (em smartphones e tablets).</p>
+                            <p class="col-md-6 offset-md-3">Com o sistema operacional, é possível abrir arquivos, instalar programas, usar a internet, conectar dispositivos como impressoras, e gerenciar tudo o que acontece no computador.</p>
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
         </div>
-        <div class="container mt-4 text-center">
-            <h2 id="tag1" style="color: cornflowerblue;">Finalidade e vantagens de um computador</h2>
-            <p class="mt-3">O computador foi inventado para oferecer conforto e praticidade, como
-                todo instrumento inventado pela humanidade. Ele é um equipamento com
-                capacidade para receber, processar, produzir e armazenar grandes volumes de
-                informações. As grandes vantagens que obtemos utilizando um computador
-                são as seguintes:</p>
-            <ul class="lista-centralizada mt-4 d-inline-block text-start">
-                <li>Rapidez na execução de tarefas, em função de sua grande capacidade de processamento de informações.</li>
-                <li>Precisão na produção de informações (exatidão).</li>
-                <li>Manipulação de grande volume de informações, principalmente quando do controle de tarefas repetitivas.</li>
-                <li>Organização ou mesmo racionalidade, que é uma consequência de todas as vantagens citadas anteriormente.</li>
-            </ul>
-            <div>
-                <h2 id="tag2" class="mt-4" style="color: cornflowerblue;">Tipos de computadores</h2>
-                <div>
-                    <h4 class="mt-3" style="color: rgb(145, 157, 179);">Servidor Corporativo</h4>
-                    <p>Servidor corporativo – é um computador que possui gigantesca capacidade
-                        de processamento e substituiu o antigo mainframe (este ocupava muito
-                        espaço). É adotado por grandes corporações que precisam controlar milhões
-                        de transações por dia (bancos e administradoras de cartões de crédito, por
-                        exemplo). Pode ser chamado também de super-servidor.</p>
-                        <img src="img/servidorCorporativo.png" alt="Imagem de servidor corporativo" width="500px">
-                        <p style="font-size: small;">Fonte: https://br.freepik.com/vetores-gratis/dois-servidores-pretos-racks-ilustracao-realista_3907757.htm#from_element=detail_alsolike</p>
-                </div>
-                <div>
-                    <h4 class="mt-3" style="color: rgb(145, 157, 179);">Desktop</h4>
-                    <p>Desktop – computador de mesa, não portátil, com monitor, mouse, teclado,
-                        caixas de som, e a caixa onde fica a CPU, placa-mãe, processador, entre
-                        outras peças. Uma versão de desktop conhecido como “all in one” (tudo
-                        em um) reúne basicamente o gabinete (CPU) e o monitor numa só estrutura,
-                        economizando espaço.</p>
-                    <img src="img/desktop-curso.jpg" alt="Imagem de um desktop" width="400px">
-                    <p style="font-size: small;" class="mt-2">Fonte: https://br.freepik.com/fotos-gratis/espaco-de-trabalho-com-tela-e-teclado-do-computador_12079253.htm#fromView=search&page=1&position=48&uuid=400e8952-0a04-4b6c-9919-f5a479938ba3&query=pc</p>
-                </div>
-                <div>
-                    <h4 class="mt-3" style="color: rgb(145, 157, 179);">Notebooks ou laptops</h4>
-                    <p>Notebook ou laptop – é um microcomputador portátil. Antes, laptop e
-                        notebook tinham características diferentes, porém os conceitos se perderam
-                        com o passar do tempo. Monitor, teclado e CPU estão integrados em um só
-                        gabinete, com monitor retrátil para guarda e transporte.</p>
-                        <img src="img/notebook.jpg" alt="Imagem notebook apple" width="400px">
-                        <p style="font-size: small;" class="mt-2">Fonte: https://www.pexels.com/pt-br/foto/motor-de-pesquisa-google-no-macbook-pro-40185/</p>
-                </div>
-                <div>
-                    <h4 class="mt-3" style="color: rgb(145, 157, 179);">Tablets e Smartphones</h4>
-                </div>
-            </div>
         </div>
-            
-        </div>
+        
     </main>
 </body>
 </html>
