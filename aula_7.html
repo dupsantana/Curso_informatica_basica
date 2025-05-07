@@ -39,6 +39,7 @@
         .subtitulo {
           color: rgb(121, 145, 190);
           margin-top: 1.5rem;
+          font-weight: bold;
         }
         .fonte-pequena {
           font-size: small;
@@ -97,13 +98,13 @@
             <p>Esse processo só é possível porque os dois computadores estão conectados à internet, que é uma rede mundial de computadores. Mesmo longe fisicamente, vocês conseguem trocar informações em segundos, graças à rede.</p>
             <img src="img/Diagrama-Redes.PNG" alt="Estrutura de uma rede de computadores">
             <p class="fonte-pequena">Fonte: CTISM (Imagem da apostila "Informática Básica" da UFSM)</p>
-            <p class="subtitulo"><strong>📡 Classificação das Redes</strong></p>
+            <p class="subtitulo">📡 Classificação das Redes</p>
             <ul class="lista-centralizada lista-conteudo sem-ponto container-texto">
               <li>▶ <strong>Redes LAN:</strong> Local Area Network (Rede Local) é uma rede pequena, geralmente uma sala, prédio ou lan house. </li>
               <li>▶ <strong>Redes WAN:</strong> Wide Area Network (Rede de longa distância) é uma rede que interconecta redes lan’s, 
               normalmente ela é conectada por cabos de fibra ótica ou satélite. </li>
             </ul>
-            <p class="subtitulo"><strong>📶 Principais tipos de Componentes de uma Rede de Computadores</strong></p>
+            <h6 class="subtitulo">📶 Principais tipos de Componentes de uma Rede de Computadores</h6>
             <ul class="lista-centralizada lista-conteudo sem-ponto container-texto">
               <li>▶ <strong>Roteadores:</strong> usados em redes de maior porte, eles também estabelecem
                 comunicação entre duas máquinas, com a diferença que esses equipamentos
@@ -120,11 +121,59 @@
         <div>
           <h2 id="tag2" class="titulo-secao">Conexão com Wi-Fi e cabo</h2>
           <p class="container-texto">
-            <p class="subtitulo"><strong>▶️ Conexão com Wi-fi</strong></p>
-            <p>Abreviação de “Wireless Fidelity” (fidelidade sem fio). Também conhecida somente como wireless, é uma tecnologia de comunicação
-              entre dispositivos (computadores e telefones celulares principalmente) que utiliza frequências de rádio (ou outro meio de
-              propagação de dados) e não precisa do uso de cabos.</p>
-            
+            <h6 class="subtitulo">▶️ Conexão com Wi-fi</h6>
+            <ul class="lista-centralizada lista-conteudo sem-ponto container-texto">
+              <li>▶ O roteador Wi-Fi transmite sinais de rádio, que são captados por dispositivos habilitados para Wi-Fi (como laptops, smartphones e tablets).</li>
+              <li>▶ Esses sinais viajam através do ar em frequências específicas, permitindo que os dispositivos se conectem à rede sem a necessidade de cabos físicos.</li>
+            </ul>
+            <p class="mt-4"><strong>Vantagens:</strong></p>
+            <ul class="lista-centralizada lista-conteudo container-texto">
+              <li><strong>Mobilidade:</strong> Permite que você se movimente livremente dentro da área de cobertura sem perder a conexão.</li>
+              <li><strong>Facilidade de Instalação:</strong> Não requer cabos, o que simplifica a instalação e torna o ambiente mais limpo e organizado.</li>
+              <li><strong>Conectividade em Diversos Dispositivos:</strong> Permite conectar múltiplos dispositivos (como smartphones, tablets, laptops, e até smart TVs) sem a necessidade de fios.</li>
+            </ul>
+            <p class="mt-4"><strong>Desvantagens:</strong></p>
+            <ul class="lista-centralizada lista-conteudo container-texto">
+              <li><strong>Interferência:</strong> O Wi-Fi pode ser afetado por obstáculos (como paredes e móveis) e interferências de outros dispositivos eletrônicos, resultando em perda de sinal ou lentidão.</li>
+              <li><strong>Velocidade e Estabilidade:</strong> Comparado à conexão via cabo, o Wi-Fi pode ter uma velocidade menor e maior latência, especialmente se houver muitos dispositivos conectados ou distância do roteador.</li>
+            </ul>
+            <h6 class="subtitulo">▶️ Conexão via cabo (Ethernet)</h6>
+            <ul class="lista-centralizada lista-conteudo sem-ponto container-texto">
+              <li>▶ Cabo utilizado para conectar computadores, roteadores, switches e outros dispositivos em uma rede local (LAN).</li>
+            </ul>
+            <p class="mt-4"><strong>Vantagens:</strong></p>
+            <ul class="lista-centralizada lista-conteudo container-texto">
+              <li><strong>Velocidade e Estabilidade:</strong> Conexões via Ethernet são mais rápidas e estáveis do que conexões sem fio (Wi-Fi), pois o cabo garante uma comunicação direta e sem interferências.</li>
+              <li><strong>Menos Latência:</strong> A latência, ou tempo de resposta, é menor em conexões Ethernet, o que é importante em atividades como videoconferências, jogos online e transferências de arquivos grandes.</li>
+              <li><strong>Segurança:</strong> Como a comunicação é física e sem o uso de ondas de rádio, é mais difícil para um intruso interceptar ou hackear a conexão.</li>
+            </ul>
+            <p class="mt-4"><strong>Desvantagens:</strong></p>
+            <ul class="lista-centralizada lista-conteudo container-texto">
+              <li><strong>Mobilidade Limitada:</strong> Ao contrário do Wi-Fi, a conexão via cabo exige que o dispositivo esteja fisicamente conectado ao cabo, o que limita a mobilidade.</li>
+              <li><strong>Instalação:</strong> Em redes maiores, a instalação de cabos pode ser mais complexa, especialmente se for necessário passar cabos por paredes, tetos ou grandes distâncias.</li>
+            </ul>
+          </p>
+        </div>
+        <div>
+          <h2 id="tag3" class="titulo-secao">Navegadores e pesquisa eficiente (Google)</h2>
+          <p class="container-texto">
+            <h6 class="subtitulo">🔍 O que é um navegador de internet?</h6>
+            <p>É um programa que permite acessar sites e conteúdos na web. Ele interpreta os dados de páginas HTML e exibe-as de forma que possamos visualizar e interagir com elas.</p>
+            <h6 class="subtitulo">🔍 Como funciona um navegador?</h6>
+            <ul class="lista-centralizada lista-conteudo sem-ponto container-texto">
+              <li>▶ O navegador interpreta os endereços (URLs) que digitamos na barra de pesquisa ou navegação.</li>
+              <li>▶ Ele solicita essas páginas aos servidores web e exibe o conteúdo recebido.</li>
+              <li>▶ Além de exibir sites, os navegadores também oferecem recursos como favoritos, histórico de navegação, extensões (como bloqueadores de anúncios), e modo de navegação anônima.</li>
+            </ul>
+            <h6 class="subtitulo">🛜 Navegando na internet</h6>
+            <img src="img/Navegador-Google.png" alt="Página de navegação do Google">
+            <p class="fonte-pequena">Fonte: Apostila "Informática Básica para Estudo Online" - Instituto Federal de Goiás</p>
+            <ol class="lista-centralizada">
+              <li> Onde você deve digitar o endereço do site. Ex: google.com, cruzeirodosul.edu.br, dentre outros.</li>
+              <li> As abas do seu navegador. Em uma só janela é possível abrir quantas forem necessárias, sendo que cada aba representa o acesso a um site diferente. Mas, atenção! Quanto maior a quantidade de abas abertas,,
+              maior é o consumo de memória no computador, o que pode deixá-lo mais lento!</li>
+              <li> Apresenta o perfil do usuário autenticado no navegador. Isso permite que informações de navegação sejam importadas em computadores diferentes.</li>
+            </ol>
           </p>
         </div>
       </div>
