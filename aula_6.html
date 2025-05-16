@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 6 - Planilhas Básicas</title>
+    <title>Aula de Excel - Controle de Gastos 50/30/20</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
         main {
             font-family: Arial, sans-serif;
@@ -15,21 +15,25 @@
             line-height: 1.6;
         }
         
-        main.h1 {
+        h1 {
             color: #2c3e50;
             text-align: center;
+            margin-bottom: 30px;
         }
         
         h2 {
             color: #34495e;
             margin-top: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
         }
         
         .destaque {
             background-color: #f8f9fa;
             padding: 15px;
             border-radius: 5px;
-            margin: 10px 0;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
         }
         
         .download-btn {
@@ -39,17 +43,124 @@
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 20px;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        
+        .download-btn:hover {
+            background-color: #2980b9;
+            color: white;
         }
         
         .topico {
-            border-left: 4px solid #3498db;
-            padding-left: 10px;
-            margin: 15px 0;
+            margin: 25px 0;
         }
-        .icone {
+        
+        .fas {
             margin-right: 10px;
             color: #3498db;
+        }
+        
+        .passo-a-passo {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        .metodo-box {
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .metodo-item {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        
+        .necessidades {
+            background-color: #d4edda;
+        }
+        
+        .desejos {
+            background-color: #fff3cd;
+        }
+        
+        .poupanca {
+            background-color: #d1ecf1;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .screenshot {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            margin: 15px 0;
+            max-width: 100%;
+        }
+        
+        .header {
+            margin-bottom: 30px;
+        }
+        
+        .header .bg-primary {
+            padding: 10px 0;
+        }
+        
+        .header .title h1 {
+            color: white;
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        
+        .header .link-light {
+            padding: 10px 0;
+            display: block;
+        }
+        
+        .header .link-light:hover {
+            text-decoration: underline;
+        }
+
+        .imagem-componente {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .imagem-componente img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -60,10 +171,10 @@
         <div class="container-fluid bg-primary">
             <div class="row">
                 <div class="col-3">
-                    <a href="index.html"><i class="fa-solid fa-house fa-2xl mt-5 ms-5" style="color: #ffffff;"></i></a>
+                    <a href="index.html"><i class="fa-solid fa-house fa-2xl mt-3 ms-3" style="color: #ffffff;"></i></a>
                 </div>
                 <div class="col-6 text-center">
-                    <div class="title text-light mb-4 mt-3">
+                    <div class="title text-light mb-2 mt-2">
                         <h1>Curso de informática básica</h1>
                     </div>
                 </div>
@@ -73,68 +184,154 @@
                     <a href="aulas.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><h4>Aulas</h4></a>
                 </div>
                 <div class="col-6">
-                    <a href="calendar.html"class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><h4>Calendário</h4></a>
+                    <a href="calendar.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><h4>Calendário</h4></a>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <h1>Aula 6 – Planilhas Básicas</h1>
-
-        <div class="destaque">
-            <h2><i class="fa-solid fa-table icone"></i>Tabelas Simples</h2>
-            <ol>
-                <li>Cabeçalhos na primeira linha</li>
-                <li>Dados organizados em colunas</li>
-                <li>Formatação básica (bordas, cores)</li>
-            </ol>
-        </div>
+        <h1><i class="fas fa-file-excel icone"></i>Excel Básico:</h1>
 
         <div class="topico">
-            <h3><i class="fa-solid fa-calculator icone"></i>Fórmulas Básicas</h3>
-            <p>▶ Soma: =SOMA(A1:A10)<br>
-            ▶ Média: =MÉDIA(B2:B8)<br>
-            ▶ Multiplicação: =C3*D3<br>
-            ▶ Porcentagem: =(valor/total)*100</p>
+            <h2><i class="fas"></i>Introdução</h2>
+            <p>Nesta aula aprenderemos os conceitos básicos do excel, e com isso vamos aprender a criar uma planilha de controle financeiro pessoal utilizando o Excel, aplicando o método 50/30/20 em gráfico, para uma gestão financeira eficiente.</p>
         </div>
+
+       
 
         <div class="topico">
-            <h3><i class="fa-solid fa-cart-shopping icone"></i>Aplicações Práticas</h3>
-            <p>📝 Lista de Compras:<br>
-            - Item | Quantidade | Preço Unitário | Total<br>
-            🧾 Controle de Gastos:<br>
-            - Data | Descrição | Valor | Categoria</p>
-        </div>
+            <h2><i class="fas"></i><strong>Excel Basico:</strong></h2>
+            
+            <div class="passo-a-passo">
+                <h4><i class="fas"></i><strong>Passo 1: Elementos básicos</strong></h4>
+                <p>Crie um excel em branco</p>
+                <div class="imagem-componente">
+                    <img src="img/novo-excel.jpg" alt="novo excel">
+                </div> 
+                
+                <p><strong>Células:</strong> 
+                São as caixas individuais onde são inseridos dados, que podem ser texto, números, datas, horas, ou fórmulas.</p>
+                <div class="imagem-componente">
+                    <img src="img/Celula.jpeg" alt="celula">
+                </div>
 
-        <div class="destaque">
-            <h2><i class="fa-solid fa-chart-column icone"></i>Gráficos Básicos</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>Tipos Comuns:</h4>
-                    <ul>
-                        <li>Barras (comparações)</li>
-                        <li>Pizza (percentuais)</li>
-                        <li>Linhas (evolução temporal)</li>
-                    </ul>
+                <p><strong>Linhas:</strong> 
+                Conjuntos de células que se estendem horizontalmente, numeradas sequencialmente.</p>
+              
+                <p><strong>Colunas:</strong> 
+                Conjuntos de células que se estendem verticalmente, identificados por letras (A, B, C, etc.).</p>
+             
+                <p><strong>Endereço da Célula:</strong> 
+                A combinação da letra da coluna com o número da linha, como A1, B2, C3, etc.</p>
+                <div class="imagem-componente">
+                    <img src="img/endereco-celula.jpg" alt="endereço da célula">
                 </div>
-                <div class="col-md-6">
-                    <h4>Passo a Passo:</h4>
-                    <ol>
-                        <li>Selecione os dados</li>
-                        <li>Clique em "Inserir Gráfico"</li>
-                        <li>Escolha o tipo desejado</li>
-                    </ol>
+
+                <p><strong>Planilha:</strong> 
+                Uma folha de cálculo dentro de um arquivo do Excel, onde são organizados os dados.</p>
+
+                <p><strong>Fórmula:</strong> 
+                Uma expressão que realiza cálculos, utilizando operadores matemáticos, funções e referências a outras células.</p>
+
+                <p><strong>Formatação Basica das Células:</strong> 
+                Alteração do aspecto visual das células, como tipos de letra, cores, estilos, formatos de números (moeda, porcentagem, etc.).</p>
+                <div class="imagem-componente">
+                    <img src="img/formatacao-basica.png" alt="formatação bas">
                 </div>
+
+                <p><strong>Seleção:</strong> 
+                Escolha de células, linhas, colunas ou faixas de células para aplicar operações ou formatação.</p>
+            </div>
+            
+            <div class="passo-a-passo">
+                <h4><i class="fas"></i><strong>Passo 2: Inserindo Fórmulas e Definindo em Tabelas</strong></h4>
+
+                <p><strong>Fórmulas:</strong></p>
+                    <p>Permitem realizar cálculos, como soma, média, máximo, mínimo, etc., utilizando funções como =SOMA(), =MULT() e etc.</p>
+                    <p>Sempre que uasr ";" pra atribiur em alguma fórmula definindo as células, você está se referindo a somente dois números, e quando você usa ":" se refere a uma quantidade x de células na fórmula</p>
+                    <div class="imagem-componente">
+                        <img src="img/formulas-excel.png" alt="formulas basicas">
+                    </div>
+
+                <p><strong>Definir em Tabela:</strong> 
+                    Estruturas organizadas de dados, que permitem filtrar e ordenar informações.</p>
+                    <div class="imagem-componente">
+                        <img src="img/formatar-tabela.jpg" alt="inserir tabela">
+                    </div>
+                
+            </div>
+            
+            <div class="passo-a-passo">
+                <h4><i class="fas"></i><strong>Passo 3: Criando Gráficos</strong></h4>
+                <p>Selecione os dados das categorias e insira um gráfico de pizza para visualizar a distribuição 50/30/20.</p>
+                <ol>
+                    <p><strong>Inserir Gráfico:</strong></p>
+                    <li>Clique em "Inserir" > "Gráfico de Pizza"</li>
+                    <div class="imagem-componente">
+                        <img src="img/formatar-tabela.jpg" alt="inserir tabela">
+                    </div>
+                    <p><strong>Escolha o estilo desejado:</strong></p>
+                    <li>Selecione os valores que serão inseridos no gráfico</li>
+                    <li>Personalize cores e rótulos conforme necessário</li>
+                    <div class="imagem-componente">
+                        <img src="img/formatar-tabela.jpg" alt="inserir tabela">
+                    </div>
+                </ol>
             </div>
         </div>
 
-        
-        <h2>Atividade Prática</h2>
-        <p>Baixe o PDF com exercícios para praticar:</p>
-        <a href="downloads/atv/Atividade_6.pdf" download="Material_Aula_6" class="download-btn">Baixar Atividade (PDF)</a>
+        <div class="metodo-box">
+            <h3><i class="fas"></i>O Método 50/30/20</h3>
+            <p>Este método divide sua renda líquida em três categorias:</p>
+            
+            <div class="metodo-item necessidades">
+                <h4><i class="fas"></i>50% - Necessidades</h4> 
+            </div>
+            
+            <div class="metodo-item desejos">
+                <h4><i class="fas "></i>30% - Desejos</h4>
+                <p>Gastos não essenciais como entretenimento, jantares fora, hobbies e viagens.</p>
+            </div>
+            
+            <div class="metodo-item poupanca">
+                <h4><i class="fas"></i>20% - Poupança e Dívidas</h4>
+                <p>Reserva para emergências, investimentos e pagamento de dívidas.</p>
+            </div>
+        </div>
 
+        <div class="topico">
+            <h2><i class="fas"></i>Atividade Prática</h2>
+            
+            <div class="destaque">
+                <h4>Crie uma planilha de controle de gastos</h4>
+                <ol>
+                    <li>Crie em um campo isolado o valor Salário</li>
+                    <li>Crie uma planilha um excel em branco</li>
+                    <li>Aplique estilizações nas células</li>
+                    <li>Defina como uma Tabela</li>
+                    <li>Aplique os dados para serem feitos os cálculos</li>
+                    <li>Aplique as formatações corretas</li>
+                    <li>Aplique dados com as informações do Método 50/30/20</li>
+                </ol>
+                
+                <h4 class="mt-4">Crie um gráfico estilo "Pizza":</h4>
+                <ol>
+                    <li>Crie um gráfico no formato "Pizza"(Qualquer um dos modelos)</li>
+                    <li>Determine os valores "Necessidades, Desejos e Poupança" no campo "SELECIONAR DADOS" com os seus respectivos valores, para ser o principal valor do gráfico</li>
+                    <li>Modifique o gráfico em algum dos seus estilos em "LAYOUT RÁPIDO", para que fique visível a porcentagem</li>
+                    <li>Veja se o seu controle financeiro se aplica no método 50/30/20 de acordo com o gráfico</li>
+                </ol>
+            </div>
+            
+            <h4 class="mt-4"><strong>Exemplo final da atividade</strong></h4>
+            <div class="imagem-componente">
+                <img src="img/formatar-tabela.jpg" alt="inserir tabela">
+            </div>
+            
+        </div>
     </main>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"></script>
 </body>
 </html>
